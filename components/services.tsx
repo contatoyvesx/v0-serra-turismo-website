@@ -1,42 +1,49 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Plane, Hotel, MapIcon, Utensils, Camera, Shield, Sparkles } from "lucide-react"
+import { Check, Info, MapIcon, MoonStar, Shield, Sparkles, Train } from "lucide-react"
 
 const services = [
   {
-    icon: Plane,
-    title: "Transporte Premium",
-    description: "Passagens aéreas e transfers exclusivos com todo conforto",
+    icon: Train,
+    title: "Tour Uva e Vinho + Maria Fumaça",
+    description:
+      "História, cultura e sabores em um passeio completo pela Serra Gaúcha, com degustações e experiências autênticas.",
     color: "from-purple-500/10 to-violet-500/10",
+    highlights: [
+      "Passeio de Maria Fumaça com degustações a bordo",
+      "Visita à Epopeia Italiana",
+      "Parada na Queijaria Fetina de Formaio",
+      "Tour na Vinícola Aurora",
+      "Almoço italiano no Cantina Dell Vale Ristorante",
+    ],
+    includes: ["Transporte", "Passeio de Maria Fumaça", "Degustações", "Almoço italiano"],
   },
   {
-    icon: Hotel,
-    title: "Hospedagem Selecionada",
-    description: "Hotéis e pousadas boutique cuidadosamente escolhidos",
+    icon: MoonStar,
+    title: "Noite Alemã – Kerbfest",
+    description:
+      "Uma imersão na cultura alemã em Nova Petrópolis com gastronomia típica, música e danças tradicionais.",
     color: "from-amber-500/10 to-yellow-500/10",
+    highlights: [
+      "Restaurante Lindenhoff com jantar típico",
+      "Café colonial completo",
+      "Show com músicas e danças alemãs",
+    ],
+    includes: ["Transporte", "Jantar típico", "Show cultural"],
   },
   {
     icon: MapIcon,
-    title: "Roteiros Personalizados",
-    description: "Itinerários sob medida para cada perfil de viajante",
-    color: "from-purple-500/10 to-pink-500/10",
-  },
-  {
-    icon: Utensils,
-    title: "Experiências Gastronômicas",
-    description: "Restaurantes premiados e experiências culinárias únicas",
-    color: "from-orange-500/10 to-amber-500/10",
-  },
-  {
-    icon: Camera,
-    title: "Tours Exclusivos",
-    description: "Passeios privativos com guias especializados",
+    title: "City Tour Gramado e Canela - Coletivo",
+    description:
+      "Roteiro completo pelos principais pontos de Gramado e Canela, com saídas diárias e guias experientes.",
     color: "from-violet-500/10 to-purple-500/10",
-  },
-  {
-    icon: Shield,
-    title: "Seguro Viagem",
-    description: "Proteção completa para sua tranquilidade",
-    color: "from-yellow-500/10 to-amber-500/10",
+    highlights: [
+      "Gramado: Fábrica de Cristais, Lago Negro, Rua Torta, Mini Mundo e muito mais",
+      "Canela: Bondinhos Aéreos/Cascata do Caracol, Catedral de Pedra, Mundo Gelado e pontos panorâmicos",
+      "Saídas entre 7h40 e 8h30 com retorno até às 18h",
+      "Embarque em hotéis e pousadas de Gramado e Canela (zona urbana)",
+    ],
+    includes: ["Transporte com motorista/guia"],
+    exclusions: ["Almoço", "Bebidas", "Ingressos nos pontos de visitação"],
   },
 ]
 
@@ -53,7 +60,7 @@ export function Services() {
             <span className="text-sm font-semibold uppercase tracking-wide">Serviços</span>
           </div>
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-balance">
-            Serviços <span className="text-gradient-purple-gold">Completos</span>
+            Serviços <span className="text-primary">Incríveis</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
             Cuidamos de cada detalhe para que você aproveite momentos inesquecíveis
@@ -79,8 +86,57 @@ export function Services() {
                   {service.title}
                 </h3>
               </CardHeader>
-              <CardContent className="relative z-10">
+              <CardContent className="relative z-10 space-y-4">
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+
+                {service.highlights && (
+                  <ul className="space-y-2 text-muted-foreground">
+                    {service.highlights.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex gap-2 items-start">
+                        <Check size={16} className="mt-0.5 text-primary" />
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {service.includes && (
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-primary">
+                      <Shield size={16} />
+                      <span>Incluso</span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {service.includes.map((item, itemIndex) => (
+                        <span
+                          key={itemIndex}
+                          className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/10"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.exclusions && (
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-accent">
+                      <Info size={16} />
+                      <span>Não incluso</span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {service.exclusions.map((item, itemIndex) => (
+                        <span
+                          key={itemIndex}
+                          className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium border border-accent/10"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
