@@ -18,10 +18,8 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-primary/5"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-lg border-b border-border/70 ${
+        isScrolled ? "shadow-lg shadow-primary/5" : "shadow-sm"
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
@@ -37,53 +35,42 @@ export function Header() {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#destinos"
-              className={`font-medium transition-all duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
             >
               Destinos
             </a>
             <a
               href="#servicos"
-              className={`font-medium transition-all duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
             >
               Serviços
             </a>
             <a
               href="#depoimentos"
-              className={`font-medium transition-all duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
             >
               Depoimentos
             </a>
             <a
               href="#contato"
-              className={`font-medium transition-all duration-200 hover:text-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
             >
               Contato
             </a>
-            <Button className="bg-gradient-to-r from-accent to-secondary hover:shadow-xl hover:shadow-accent/50 text-accent-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105">
+            <Button className="bg-gradient-to-r from-primary/90 via-primary to-accent hover:shadow-lg hover:shadow-primary/30 text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105">
               Reserve Agora
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className={`md:hidden transition-colors ${isScrolled ? "text-foreground" : "text-white"}`}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <button className="md:hidden transition-colors text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-background/95 backdrop-blur-xl rounded-2xl p-6 border border-border/50 shadow-xl">
+          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-white/95 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
             <a
               href="#destinos"
               className="text-foreground hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-primary/10 font-medium"
@@ -112,7 +99,7 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-gradient-to-r from-accent to-secondary hover:shadow-lg text-accent-foreground w-full font-semibold rounded-full">
+            <Button className="bg-gradient-to-r from-primary via-primary to-accent hover:shadow-lg text-primary-foreground w-full font-semibold rounded-full">
               Reserve Agora
             </Button>
           </div>
