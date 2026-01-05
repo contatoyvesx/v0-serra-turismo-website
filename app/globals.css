@@ -11,20 +11,20 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0.03 280);
   /* roxo vibrante e luxuoso como cor primária */
-  --primary: oklch(0.45 0.25 295);
-  --primary-foreground: oklch(0.99 0.005 280);
-  /* dourado rico e elegante como cor secundária */
-  --secondary: oklch(0.72 0.14 75);
+  --primary: oklch(0.62 0.16 295);
+  --primary-foreground: oklch(0.12 0.04 285);
+  /* dourado suave e elegante como cor secundária */
+  --secondary: oklch(0.85 0.09 90);
   --secondary-foreground: oklch(0.15 0.03 280);
   --muted: oklch(0.97 0.01 280);
   --muted-foreground: oklch(0.5 0.03 280);
-  /* acento dourado brilhante */
-  --accent: oklch(0.75 0.16 80);
-  --accent-foreground: oklch(0.15 0.03 280);
+  /* acento dourado brilhante e acolhedor */
+  --accent: oklch(0.87 0.1 95);
+  --accent-foreground: oklch(0.18 0.03 280);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.01 280);
-  --input: oklch(0.92 0.01 280);
+  --border: oklch(0.95 0.01 280);
+  --input: oklch(0.95 0.01 280);
   --ring: oklch(0.45 0.25 295);
   --chart-1: oklch(0.45 0.25 295);
   --chart-2: oklch(0.75 0.16 80);
@@ -168,7 +168,7 @@
 }
 
 .text-gradient-purple-gold {
-  background: linear-gradient(135deg, oklch(0.45 0.25 295) 0%, oklch(0.75 0.16 80) 100%);
+  background: linear-gradient(135deg, oklch(0.62 0.16 295) 0%, oklch(0.87 0.1 95) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
