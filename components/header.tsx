@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Sparkles } from "lucide-react"
+import { Menu, X, Sparkles, PhoneCall } from "lucide-react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,7 +25,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-primary via-primary to-accent flex items-center justify-center shadow-lg shadow-primary/30 group-hover:shadow-xl group-hover:shadow-accent/40 transition-all duration-300 group-hover:scale-110">
+            <div className="relative w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
               <Sparkles className="text-white" size={20} />
             </div>
             <span className="font-serif text-2xl md:text-3xl font-bold text-gradient-purple-gold">Serra Turismo</span>
@@ -57,8 +57,14 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-gradient-to-r from-primary/90 via-primary to-accent hover:shadow-lg hover:shadow-primary/30 text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105">
+            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105">
               Reserve Agora
+            </Button>
+            <Button asChild variant="outline" className="border-[#5e1882] text-[#5e1882] hover:bg-[#5e1882] hover:text-white rounded-full px-5">
+              <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+                <PhoneCall size={18} />
+                WhatsApp
+              </a>
             </Button>
           </div>
 
@@ -99,8 +105,14 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-gradient-to-r from-primary via-primary to-accent hover:shadow-lg text-primary-foreground w-full font-semibold rounded-full">
+            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground w-full font-semibold rounded-full">
               Reserve Agora
+            </Button>
+            <Button asChild variant="outline" className="border-[#5e1882] text-[#5e1882] hover:bg-[#5e1882] hover:text-white w-full font-semibold rounded-full flex items-center gap-2">
+              <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2">
+                <PhoneCall size={18} />
+                WhatsApp
+              </a>
             </Button>
           </div>
         )}

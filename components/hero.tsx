@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Sparkles, PhoneCall } from "lucide-react"
 
 export function Hero() {
   return (
@@ -10,7 +10,7 @@ export function Hero() {
           alt="Mountain landscape"
           className="w-full h-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/30 to-accent/25 animate-gradient" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/20 to-primary/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-white/20 to-transparent" />
       </div>
 
@@ -38,7 +38,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button
             size="lg"
-            className="group bg-gradient-to-r from-primary to-accent hover:shadow-xl hover:shadow-primary/30 text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            className="group bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
           >
             Explorar Destinos
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -46,9 +46,12 @@ export function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="bg-white/80 hover:bg-white text-primary border-white/70 hover:border-primary/30 backdrop-blur-md text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            asChild
+            className="bg-white/80 hover:bg-white text-[#5e1882] border-[#5e1882] hover:border-[#5e1882] backdrop-blur-md text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
           >
-            Fale Conosco
+            <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+              <PhoneCall size={20} /> WhatsApp
+            </a>
           </Button>
         </div>
 
