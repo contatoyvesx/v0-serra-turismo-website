@@ -8,28 +8,24 @@ const destinations = [
     description: "A Suíça Brasileira oferece charme europeu e paisagens deslumbrantes",
     image: "/campos-do-jordao-mountain-town-european-architectu.jpg",
     rating: 4.9,
-    price: "A partir de R$ 2.500",
   },
   {
     name: "Gramado",
     description: "Destino romântico com arquitetura encantadora e gastronomia excepcional",
     image: "/gramado-charming-town-with-flowers-and-architectur.jpg",
     rating: 4.8,
-    price: "A partir de R$ 2.200",
   },
   {
     name: "Monte Verde",
     description: "Refúgio tranquilo nas montanhas com natureza preservada",
     image: "/monte-verde-peaceful-mountain-forest-retreat.jpg",
     rating: 4.9,
-    price: "A partir de R$ 1.900",
   },
   {
     name: "Visconde de Mauá",
     description: "Paraíso ecológico com cachoeiras, trilhas e muito verde",
     image: "/beautiful-waterfall-in-lush-green-mountains.jpg",
     rating: 4.7,
-    price: "A partir de R$ 1.800",
   },
 ]
 
@@ -37,14 +33,14 @@ export function Destinations() {
   return (
     <section
       id="destinos"
-      className="py-32 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden"
+      className="py-32 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
     >
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary/80 mb-6">
             <MapPin size={16} />
             <span className="text-sm font-semibold uppercase tracking-wide">Destinos</span>
           </div>
@@ -60,7 +56,7 @@ export function Destinations() {
           {destinations.map((destination, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-2 border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer bg-card"
+              className="group overflow-hidden border-2 border-border hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer bg-card/95"
             >
               <div className="relative h-80 overflow-hidden">
                 <img
@@ -68,30 +64,27 @@ export function Destinations() {
                   alt={destination.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-transparent" />
 
-                <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-2 rounded-full bg-white/95 backdrop-blur-sm shadow-lg">
+                <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-2 rounded-full bg-secondary/90 backdrop-blur-sm shadow-lg">
                   <Star size={16} className="fill-accent text-accent" />
                   <span className="font-bold text-sm">{destination.rating}</span>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-[#fef6d8]">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-2">
                       <MapPin size={24} className="text-accent flex-shrink-0" />
                       <h3 className="font-serif text-3xl font-bold">{destination.name}</h3>
                     </div>
                   </div>
-                  <p className="text-white/90 text-base leading-relaxed mb-3">{destination.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-accent font-bold text-lg">{destination.price}</span>
-                  </div>
+                  <p className="text-[#f3d9a6] text-base leading-relaxed mb-3">{destination.description}</p>
                 </div>
               </div>
 
-              <CardContent className="p-6 bg-gradient-to-br from-card to-muted/30">
+              <CardContent className="p-6 bg-gradient-to-br from-card to-muted/25">
                 <Button
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold group/btn"
+                  className="w-full bg-primary/90 hover:bg-primary text-primary-foreground font-semibold group/btn shadow-md shadow-primary/10"
                   size="lg"
                 >
                   Ver Pacotes
