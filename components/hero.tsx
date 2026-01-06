@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Sparkles, PhoneCall } from "lucide-react"
 
 export function Hero() {
   return (
@@ -10,20 +10,17 @@ export function Hero() {
           alt="Mountain landscape"
           className="w-full h-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-accent/40 animate-gradient" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/15 to-accent/15" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-white/20 to-transparent" />
       </div>
 
       <div className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float" />
-        <div
-          className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "1s" }}
-        />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/12 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-primary/8 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
       </div>
 
       <div className="container mx-auto px-4 z-10 text-center relative">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8 animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-accent/50 text-primary mb-8 shadow-sm animate-fade-in">
           <Sparkles size={16} className="text-accent" />
           <span className="text-sm font-medium">Experiências Premium desde 2010</span>
         </div>
@@ -41,31 +38,33 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button
             size="lg"
-            className="group bg-gradient-to-r from-accent via-accent to-secondary hover:shadow-2xl hover:shadow-accent/50 text-accent-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            className="group bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
           >
             Explorar Destinos
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
           </Button>
           <Button
             size="lg"
-            variant="outline"
-            className="bg-white/15 hover:bg-white/25 text-white border-white/40 hover:border-white/60 backdrop-blur-md text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            asChild
+            className="bg-[#d4af37] hover:bg-[#b88a1d] text-[#2f1b47] text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(212,175,55,0.25)]"
           >
-            Fale Conosco
+            <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+              <PhoneCall size={20} /> WhatsApp
+            </a>
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto bg-white/70 backdrop-blur-md rounded-2xl p-8 shadow-lg shadow-primary/5">
           {[
             { value: "15+", label: "Anos de Experiência" },
             { value: "50K+", label: "Viajantes Felizes" },
             { value: "200+", label: "Destinos Exclusivos" },
           ].map((stat, i) => (
-            <div key={i} className="text-white">
+            <div key={i} className="text-primary">
               <div className="text-4xl md:text-5xl font-bold mb-2 text-gradient-purple-gold drop-shadow-lg">
                 {stat.value}
               </div>
-              <div className="text-sm md:text-base text-white/80 font-medium">{stat.label}</div>
+              <div className="text-sm md:text-base text-foreground/80 font-medium">{stat.label}</div>
             </div>
           ))}
         </div>

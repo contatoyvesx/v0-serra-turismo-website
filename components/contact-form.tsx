@@ -97,7 +97,7 @@ export function ContactForm() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-gradient-to-r from-primary via-primary to-accent hover:shadow-2xl hover:shadow-primary/30 text-primary-foreground font-semibold text-lg py-6 group"
+                    className="w-full bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground font-semibold text-lg py-6 group shadow-[0_12px_30px_rgba(93,24,130,0.25)] ring-1 ring-accent/60"
                   >
                     Enviar Mensagem
                     <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
