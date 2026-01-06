@@ -11,7 +11,7 @@ export function Hero() {
           className="w-full h-full object-cover scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/15 to-accent/15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-white/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-secondary/25 to-transparent" />
       </div>
 
       <div className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
@@ -20,18 +20,18 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10 text-center relative">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-accent/50 text-primary mb-8 shadow-sm animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/85 backdrop-blur-md border border-accent/50 text-primary mb-8 shadow-sm animate-fade-in">
           <Sparkles size={16} className="text-accent" />
           <span className="text-sm font-medium">Experiências Premium desde 2010</span>
         </div>
 
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance leading-tight">
-          <span className="text-white drop-shadow-2xl">Descubra o</span>
+          <span className="text-[#f8e7b5] drop-shadow-2xl">Descubra o</span>
           <br />
           <span className="text-gradient-purple-gold drop-shadow-2xl">Extraordinário</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/95 mb-10 max-w-3xl mx-auto text-balance leading-relaxed drop-shadow-lg">
+        <p className="text-xl md:text-2xl text-[#f3d9a6] mb-10 max-w-3xl mx-auto text-balance leading-relaxed drop-shadow-lg">
           Experiências únicas em destinos serranos que transformam viagens em memórias inesquecíveis
         </p>
 
@@ -54,7 +54,7 @@ export function Hero() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto bg-white/70 backdrop-blur-md rounded-2xl p-8 shadow-lg shadow-primary/5">
+        <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto bg-secondary/80 backdrop-blur-md rounded-2xl p-8 shadow-lg shadow-primary/5">
           {[
             { value: "15+", label: "Anos de Experiência" },
             { value: "50K+", label: "Viajantes Felizes" },
@@ -71,7 +71,7 @@ export function Hero() {
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-7 h-12 border-2 border-white/60 rounded-full flex items-start justify-center p-2 backdrop-blur-sm bg-white/10">
+        <div className="w-7 h-12 border-2 border-accent/70 rounded-full flex items-start justify-center p-2 backdrop-blur-sm bg-secondary/25">
           <div className="w-1.5 h-4 bg-accent rounded-full animate-pulse" />
         </div>
       </div>

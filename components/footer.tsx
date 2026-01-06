@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/15 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -100,25 +100,25 @@ export function Footer() {
             <div className="flex gap-3">
               <a
                 href="#"
-                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
+                className="w-11 h-11 rounded-xl bg-secondary/25 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="#"
-                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
+                className="w-11 h-11 rounded-xl bg-secondary/25 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="#"
-                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
+                className="w-11 h-11 rounded-xl bg-secondary/25 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
               >
                 <Twitter size={20} />
               </a>
               <a
                 href="#"
-                className="w-11 h-11 rounded-xl bg-white/10 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
+                className="w-11 h-11 rounded-xl bg-secondary/25 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
               >
                 <Youtube size={20} />
               </a>

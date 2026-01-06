@@ -18,7 +18,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-lg border-b border-border/70 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-secondary/90 backdrop-blur-lg border-b border-border/70 ${
         isScrolled ? "shadow-lg shadow-primary/5" : "shadow-sm"
       }`}
     >
@@ -76,7 +76,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-white/95 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
+          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-secondary/90 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
             <a
               href="#destinos"
               className="text-foreground hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-primary/10 font-medium"

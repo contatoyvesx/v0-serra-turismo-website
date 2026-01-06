@@ -66,19 +66,19 @@ export function Destinations() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-transparent" />
 
-                <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-2 rounded-full bg-white/95 backdrop-blur-sm shadow-lg">
+                <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-2 rounded-full bg-secondary/90 backdrop-blur-sm shadow-lg">
                   <Star size={16} className="fill-accent text-accent" />
                   <span className="font-bold text-sm">{destination.rating}</span>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-[#fef6d8]">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-2">
                       <MapPin size={24} className="text-accent flex-shrink-0" />
                       <h3 className="font-serif text-3xl font-bold">{destination.name}</h3>
                     </div>
                   </div>
-                  <p className="text-white/90 text-base leading-relaxed mb-3">{destination.description}</p>
+                  <p className="text-[#f3d9a6] text-base leading-relaxed mb-3">{destination.description}</p>
                 </div>
               </div>
 
