@@ -8,28 +8,24 @@ const destinations = [
     description: "A Suíça Brasileira oferece charme europeu e paisagens deslumbrantes",
     image: "/campos-do-jordao-mountain-town-european-architectu.jpg",
     rating: 4.9,
-    price: "A partir de R$ 2.500",
   },
   {
     name: "Gramado",
     description: "Destino romântico com arquitetura encantadora e gastronomia excepcional",
     image: "/gramado-charming-town-with-flowers-and-architectur.jpg",
     rating: 4.8,
-    price: "A partir de R$ 2.200",
   },
   {
     name: "Monte Verde",
     description: "Refúgio tranquilo nas montanhas com natureza preservada",
     image: "/monte-verde-peaceful-mountain-forest-retreat.jpg",
     rating: 4.9,
-    price: "A partir de R$ 1.900",
   },
   {
     name: "Visconde de Mauá",
     description: "Paraíso ecológico com cachoeiras, trilhas e muito verde",
     image: "/beautiful-waterfall-in-lush-green-mountains.jpg",
     rating: 4.7,
-    price: "A partir de R$ 1.800",
   },
 ]
 
@@ -83,9 +79,6 @@ export function Destinations() {
                     </div>
                   </div>
                   <p className="text-white/90 text-base leading-relaxed mb-3">{destination.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-accent font-bold text-lg">{destination.price}</span>
-                  </div>
                 </div>
               </div>
 
