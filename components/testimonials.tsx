@@ -29,7 +29,7 @@ export function Testimonials() {
   return (
     <section
       id="depoimentos"
-      className="py-32 bg-gradient-to-b from-muted/30 via-primary/5 to-muted/30 relative overflow-hidden"
+      className="py-32 bg-gradient-to-b from-muted/35 via-primary/6 to-muted/35 relative overflow-hidden"
     >
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float" />
       <div
@@ -39,7 +39,7 @@ export function Testimonials() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary/80 mb-6">
             <Star size={16} className="fill-primary" />
             <span className="text-sm font-semibold uppercase tracking-wide">Depoimentos</span>
           </div>
@@ -55,7 +55,7 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="group border-2 border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 bg-card relative overflow-hidden"
+              className="group border-2 border-border hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 bg-card/95 relative overflow-hidden"
             >
               <div className="absolute top-6 right-6 text-primary/10 group-hover:text-primary/20 transition-colors">
                 <Quote size={64} fill="currentColor" />
