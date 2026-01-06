@@ -13,13 +13,13 @@
   /* roxo sólido para identidade principal */
   --primary: #5e1882;
   --primary-foreground: oklch(0.12 0.04 285);
-  /* dourado suave e elegante como cor secundária */
-  --secondary: oklch(0.85 0.09 90);
-  --secondary-foreground: oklch(0.15 0.03 280);
+  /* dourado clássico compartilhando o protagonismo da paleta */
+  --secondary: #f3d9a6;
+  --secondary-foreground: oklch(0.18 0.03 280);
   --muted: oklch(0.97 0.01 280);
   --muted-foreground: oklch(0.5 0.03 280);
   /* acento dourado brilhante e acolhedor */
-  --accent: oklch(0.87 0.1 95);
+  --accent: #d4af37;
   --accent-foreground: oklch(0.18 0.03 280);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
@@ -169,4 +169,5 @@
 
 .text-gradient-purple-gold {
   color: #5e1882;
+  text-shadow: 0 6px 24px rgba(212, 175, 55, 0.2);
 }

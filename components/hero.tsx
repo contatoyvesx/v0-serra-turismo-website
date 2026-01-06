@@ -10,18 +10,18 @@ export function Hero() {
           alt="Mountain landscape"
           className="w-full h-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/20 to-primary/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/15 to-accent/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-white/20 to-transparent" />
       </div>
 
       <div className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/8 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/12 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-primary/8 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
       </div>
 
       <div className="container mx-auto px-4 z-10 text-center relative">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/75 backdrop-blur-md border border-white/60 text-primary mb-8 shadow-sm animate-fade-in">
-          <Sparkles size={16} className="text-primary" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-accent/50 text-primary mb-8 shadow-sm animate-fade-in">
+          <Sparkles size={16} className="text-accent" />
           <span className="text-sm font-medium">Experiências Premium desde 2010</span>
         </div>
 
@@ -45,9 +45,8 @@ export function Hero() {
           </Button>
           <Button
             size="lg"
-            variant="outline"
             asChild
-            className="bg-white/80 hover:bg-white text-[#5e1882] border-[#5e1882] hover:border-[#5e1882] backdrop-blur-md text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            className="bg-[#d4af37] hover:bg-[#b88a1d] text-[#2f1b47] text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(212,175,55,0.25)]"
           >
             <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
               <PhoneCall size={20} /> WhatsApp

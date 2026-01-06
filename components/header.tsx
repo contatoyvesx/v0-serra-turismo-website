@@ -25,7 +25,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="relative w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+            <div className="relative w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 ring-2 ring-accent/70 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
               <Sparkles className="text-white" size={20} />
             </div>
             <span className="font-serif text-2xl md:text-3xl font-bold text-gradient-purple-gold">Serra Turismo</span>
@@ -57,10 +57,10 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105">
+            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
               Reserve Agora
             </Button>
-            <Button asChild variant="outline" className="border-[#5e1882] text-[#5e1882] hover:bg-[#5e1882] hover:text-white rounded-full px-5">
+            <Button asChild className="bg-[#d4af37] hover:bg-[#b88a1d] text-[#2f1b47] font-semibold rounded-full px-5 shadow-[0_12px_30px_rgba(212,175,55,0.25)]">
               <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
                 <PhoneCall size={18} />
                 WhatsApp
@@ -105,10 +105,10 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground w-full font-semibold rounded-full">
+            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground w-full font-semibold rounded-full shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
               Reserve Agora
             </Button>
-            <Button asChild variant="outline" className="border-[#5e1882] text-[#5e1882] hover:bg-[#5e1882] hover:text-white w-full font-semibold rounded-full flex items-center gap-2">
+            <Button asChild className="bg-[#d4af37] hover:bg-[#b88a1d] text-[#2f1b47] w-full font-semibold rounded-full flex items-center gap-2 shadow-[0_12px_30px_rgba(212,175,55,0.25)]">
               <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2">
                 <PhoneCall size={18} />
                 WhatsApp
