@@ -1,8 +1,9 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Sparkles, PhoneCall } from "lucide-react"
+import { Menu, X, PhoneCall } from "lucide-react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,8 +26,15 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="relative w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 ring-2 ring-accent/70 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <Sparkles className="text-white" size={20} />
+            <div className="relative w-14 h-14 rounded-full overflow-hidden bg-white/10 shadow-lg shadow-primary/30 ring-2 ring-accent/70 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+              <Image
+                src="/logo.png"
+                alt="Serra Turismo"
+                fill
+                sizes="56px"
+                priority
+                className="object-contain p-2"
+              />
             </div>
             <span className="font-serif text-2xl md:text-3xl font-bold text-gradient-purple-gold">Serra Turismo</span>
           </div>
