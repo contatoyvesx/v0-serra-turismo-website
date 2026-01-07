@@ -4,28 +4,22 @@ import { Button } from "@/components/ui/button"
 
 const destinations = [
   {
-    name: "Campos do Jordão",
-    description: "A Suíça Brasileira oferece charme europeu e paisagens deslumbrantes",
-    image: "/campos-do-jordao-mountain-town-european-architectu.jpg",
-    rating: 4.9,
-  },
-  {
     name: "Gramado",
     description: "Destino romântico com arquitetura encantadora e gastronomia excepcional",
     image: "/gramado-charming-town-with-flowers-and-architectur.jpg",
     rating: 4.8,
   },
   {
-    name: "Monte Verde",
-    description: "Refúgio tranquilo nas montanhas com natureza preservada",
-    image: "/monte-verde-peaceful-mountain-forest-retreat.jpg",
-    rating: 4.9,
+    name: "Canela",
+    description: "Cenários encantadores, parques naturais e o charme da Serra Gaúcha",
+    image: "/canela-rs-nature-parks-and-charming-town.jpg",
+    rating: 4.7,
   },
   {
-    name: "Visconde de Mauá",
-    description: "Paraíso ecológico com cachoeiras, trilhas e muito verde",
-    image: "/beautiful-waterfall-in-lush-green-mountains.jpg",
-    rating: 4.7,
+    name: "Bento Gonçalves",
+    description: "Capital do vinho com roteiros enoturísticos e paisagens de vinhedos",
+    image: "/bento-goncalves-vineyards-wine-tourism.jpg",
+    rating: 4.8,
   },
 ]
 

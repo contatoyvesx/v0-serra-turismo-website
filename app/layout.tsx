@@ -8,9 +8,9 @@ const playfair = Playfair_Display({ subsets: ["latin"] })
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Serra Turismo - Experiências Premium em Destinos de Montanha",
+  title: "A Serra Turismo - Experiências Premium em Destinos de Montanha",
   description:
-    "Descubra as melhores experiências em destinos serranos com a Serra Turismo. Pacotes exclusivos e atendimento personalizado.",
+    "Descubra as melhores experiências em destinos serranos com A Serra Turismo. Pacotes exclusivos e atendimento personalizado.",
   generator: "v0.app",
   icons: {
     icon: [
