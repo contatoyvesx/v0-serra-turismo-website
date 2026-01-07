@@ -10,7 +10,7 @@ export function Hero() {
           alt="Mountain landscape"
           className="w-full h-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/15 to-accent/15" />
+        <div className="absolute inset-0 bg-primary/25" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-secondary/25 to-transparent" />
       </div>
 
@@ -28,17 +28,13 @@ export function Hero() {
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance leading-tight">
           <span className="text-secondary drop-shadow-2xl">Descubra o</span>
           <br />
-          <span className="text-gradient-purple-gold drop-shadow-2xl">Extraordinário</span>
+          <span className="text-primary drop-shadow-2xl">Extraordinário</span>
         </h1>
-
-        <p className="text-xl md:text-2xl text-secondary/90 mb-10 max-w-3xl mx-auto text-balance leading-relaxed drop-shadow-lg">
-          Experiências únicas em destinos serranos que transformam viagens em memórias inesquecíveis
-        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button
             size="lg"
-            className="group bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(93,24,130,0.25)]"
+            className="group bg-primary hover:bg-primary/90 text-white text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(93,24,130,0.25)]"
           >
             Explorar Destinos
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -61,7 +57,7 @@ export function Hero() {
             { value: "200+", label: "Destinos Exclusivos" },
           ].map((stat, i) => (
             <div key={i} className="text-primary">
-              <div className="text-4xl md:text-5xl font-bold mb-2 text-gradient-purple-gold drop-shadow-lg">
+              <div className="text-4xl md:text-5xl font-bold mb-2 text-primary drop-shadow-lg">
                 {stat.value}
               </div>
               <div className="text-sm md:text-base text-foreground/80 font-medium">{stat.label}</div>

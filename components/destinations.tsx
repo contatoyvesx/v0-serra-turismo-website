@@ -45,7 +45,7 @@ export function Destinations() {
             <span className="text-sm font-semibold uppercase tracking-wide">Destinos</span>
           </div>
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-balance">
-            Destinos <span className="text-gradient-purple-gold">Exclusivos</span>
+            Destinos <span className="text-primary">Exclusivos</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
             Explore os destinos mais encantadores das serras brasileiras com conforto e sofisticação
@@ -64,7 +64,7 @@ export function Destinations() {
                   alt={destination.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-transparent" />
+                <div className="absolute inset-0 bg-primary/60" />
 
                 <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-2 rounded-full bg-secondary/90 backdrop-blur-sm shadow-lg">
                   <Star size={16} className="fill-accent text-accent" />
