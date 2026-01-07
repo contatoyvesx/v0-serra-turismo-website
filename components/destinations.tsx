@@ -29,6 +29,13 @@ const destinations = [
   },
 ]
 
+const whatsappNumber = "555189628983"
+
+const getWhatsappLink = (destination: string) => {
+  const message = `Olá! Tenho interesse em pacotes para ${destination}. Poderia me enviar mais detalhes?`
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+}
+
 export function Destinations() {
   return (
     <section
@@ -84,11 +91,19 @@ export function Destinations() {
 
               <CardContent className="p-6 bg-gradient-to-br from-card to-muted/25">
                 <Button
+                  asChild
                   className="w-full bg-primary/90 hover:bg-primary text-primary-foreground font-semibold group/btn shadow-md shadow-primary/10"
                   size="lg"
                 >
-                  Ver Pacotes
-                  <MapPin className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={18} />
+                  <a
+                    href={getWhatsappLink(destination.name)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-center"
+                  >
+                    Ver Pacotes
+                    <MapPin className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={18} />
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -99,9 +114,10 @@ export function Destinations() {
           <Button
             variant="outline"
             size="lg"
+            asChild
             className="px-8 py-6 text-lg border-2 border-primary/30 hover:border-primary hover:bg-primary/5 bg-transparent"
           >
-            Ver Todos os Destinos
+            <a href="#contato">Ver Todos os Destinos</a>
           </Button>
         </div>
       </div>

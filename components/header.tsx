@@ -65,8 +65,11 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
-              Reserve Agora
+            <Button
+              asChild
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(93,24,130,0.25)]"
+            >
+              <a href="#contato">Reserve Agora</a>
             </Button>
             <Button
               asChild
@@ -116,8 +119,13 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full font-semibold rounded-full shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
-              Reserve Agora
+            <Button
+              asChild
+              className="bg-primary hover:bg-primary/90 text-primary-foreground w-full font-semibold rounded-full shadow-[0_10px_35px_rgba(93,24,130,0.25)]"
+            >
+              <a href="#contato" onClick={() => setIsMenuOpen(false)}>
+                Reserve Agora
+              </a>
             </Button>
             <Button
               asChild

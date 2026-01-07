@@ -34,10 +34,13 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button
             size="lg"
+            asChild
             className="group bg-primary hover:bg-primary/90 text-white text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(93,24,130,0.25)]"
           >
-            Explorar Destinos
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+            <a href="#destinos" className="flex items-center">
+              Explorar Destinos
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+            </a>
           </Button>
           <Button
             size="lg"
