@@ -22,7 +22,7 @@ const services = [
     title: "Noite Alemã – Kerbfest",
     description:
       "Uma imersão na cultura alemã em Nova Petrópolis com gastronomia típica, música e danças tradicionais.",
-    color: "from-amber-500/10 to-yellow-500/10",
+    color: "from-secondary/20 to-accent/10",
     highlights: [
       "Restaurante Lindenhoff com jantar típico",
       "Café colonial completo",

@@ -26,12 +26,12 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance leading-tight">
-          <span className="text-[#f8e7b5] drop-shadow-2xl">Descubra o</span>
+          <span className="text-secondary drop-shadow-2xl">Descubra o</span>
           <br />
           <span className="text-gradient-purple-gold drop-shadow-2xl">Extraordinário</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-[#f3d9a6] mb-10 max-w-3xl mx-auto text-balance leading-relaxed drop-shadow-lg">
+        <p className="text-xl md:text-2xl text-secondary/90 mb-10 max-w-3xl mx-auto text-balance leading-relaxed drop-shadow-lg">
           Experiências únicas em destinos serranos que transformam viagens em memórias inesquecíveis
         </p>
 
@@ -46,7 +46,7 @@ export function Hero() {
           <Button
             size="lg"
             asChild
-            className="bg-[#d4af37] hover:bg-[#b88a1d] text-[#2f1b47] text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(212,175,55,0.25)]"
+            className="bg-accent hover:bg-accent/90 text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
           >
             <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
               <PhoneCall size={20} /> WhatsApp

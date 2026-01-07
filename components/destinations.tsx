@@ -71,14 +71,14 @@ export function Destinations() {
                   <span className="font-bold text-sm">{destination.rating}</span>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-[#fef6d8]">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-secondary/95">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-2">
                       <MapPin size={24} className="text-accent flex-shrink-0" />
                       <h3 className="font-serif text-3xl font-bold">{destination.name}</h3>
                     </div>
                   </div>
-                  <p className="text-[#f3d9a6] text-base leading-relaxed mb-3">{destination.description}</p>
+                  <p className="text-secondary/85 text-base leading-relaxed mb-3">{destination.description}</p>
                 </div>
               </div>
 
