@@ -27,10 +27,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section
-      id="depoimentos"
-      className="py-32 bg-gradient-to-b from-muted/35 via-primary/6 to-muted/35 relative overflow-hidden"
-    >
+    <section id="depoimentos" className="py-32 bg-muted/35 relative overflow-hidden">
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float" />
       <div
         className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"
@@ -44,7 +41,7 @@ export function Testimonials() {
             <span className="text-sm font-semibold uppercase tracking-wide">Depoimentos</span>
           </div>
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-balance">
-            O Que Dizem <span className="text-gradient-purple-gold">Nossos Clientes</span>
+            O Que Dizem <span className="text-primary">Nossos Clientes</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
             Experiências reais de viajantes que confiaram em nosso trabalho
@@ -73,7 +70,7 @@ export function Testimonials() {
                 </p>
 
                 <div className="flex items-center gap-4 border-t-2 border-border pt-6">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl shadow-lg">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>

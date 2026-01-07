@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter, Youtube, Sparkles, Mail, Phone } from "lu
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground relative overflow-hidden">
+    <footer className="bg-primary text-primary-foreground relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/15 rounded-full blur-3xl" />
 

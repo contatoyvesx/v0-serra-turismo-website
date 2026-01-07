@@ -7,7 +7,7 @@ const services = [
     title: "Tour Uva e Vinho + Maria Fumaça",
     description:
       "História, cultura e sabores em um passeio completo pela Serra Gaúcha, com degustações e experiências autênticas.",
-    color: "from-purple-500/10 to-violet-500/10",
+    color: "bg-primary/10",
     highlights: [
       "Passeio de Maria Fumaça com degustações a bordo",
       "Visita à Epopeia Italiana",
@@ -22,7 +22,7 @@ const services = [
     title: "Noite Alemã – Kerbfest",
     description:
       "Uma imersão na cultura alemã em Nova Petrópolis com gastronomia típica, música e danças tradicionais.",
-    color: "from-secondary/20 to-accent/10",
+    color: "bg-primary/10",
     highlights: [
       "Restaurante Lindenhoff com jantar típico",
       "Café colonial completo",
@@ -35,7 +35,7 @@ const services = [
     title: "City Tour Gramado e Canela - Coletivo",
     description:
       "Roteiro completo pelos principais pontos de Gramado e Canela, com saídas diárias e guias experientes.",
-    color: "from-violet-500/10 to-purple-500/10",
+    color: "bg-primary/10",
     highlights: [
       "Gramado: Fábrica de Cristais, Lago Negro, Rua Torta, Mini Mundo e muito mais",
       "Canela: Bondinhos Aéreos/Cascata do Caracol, Catedral de Pedra, Mundo Gelado e pontos panorâmicos",
@@ -73,13 +73,13 @@ export function Services() {
               key={index}
               className="group relative hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 border-2 overflow-hidden bg-card"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer" />
+              <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <CardHeader className="relative z-10">
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg relative`}
+                  className={`w-16 h-16 rounded-2xl ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg relative`}
                 >
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 rounded-2xl bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <service.icon className="text-primary relative z-10" size={32} strokeWidth={1.5} />
                 </div>
                 <h3 className="text-2xl font-bold font-serif mb-2 group-hover:text-primary transition-colors">

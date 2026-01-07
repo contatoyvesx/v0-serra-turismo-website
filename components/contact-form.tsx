@@ -24,7 +24,7 @@ export function ContactForm() {
 
   return (
     <section id="contato" className="py-32 bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
+      <div className="absolute inset-0 bg-primary/5" />
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
@@ -35,7 +35,7 @@ export function ContactForm() {
             <span className="text-sm font-semibold uppercase tracking-wide">Contato</span>
           </div>
           <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-balance">
-            Planeje Sua Próxima <span className="text-gradient-purple-gold">Aventura</span>
+            Planeje Sua Próxima <span className="text-primary">Aventura</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
             Entre em contato conosco e descubra como podemos criar a viagem perfeita para você
@@ -46,7 +46,7 @@ export function ContactForm() {
           <div className="lg:col-span-2">
             <Card className="border-2 border-border hover:border-primary/30 transition-all duration-300 shadow-xl bg-card">
               <CardHeader className="pb-6">
-                <CardTitle className="text-3xl font-serif font-bold text-gradient-purple-gold">
+                <CardTitle className="text-3xl font-serif font-bold text-primary">
                   Envie sua Mensagem
                 </CardTitle>
                 <p className="text-muted-foreground mt-2">Responderemos em até 24 horas</p>
@@ -111,7 +111,7 @@ export function ContactForm() {
             <Card className="border-2 border-border hover:border-primary/50 hover:shadow-xl transition-all duration-300 group bg-card">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <Phone className="text-primary" size={24} />
                   </div>
                   <div>
@@ -130,7 +130,7 @@ export function ContactForm() {
             <Card className="border-2 border-border hover:border-accent/50 hover:shadow-xl transition-all duration-300 group bg-card">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-accent/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <Mail className="text-accent" size={24} />
                   </div>
                   <div>
@@ -149,7 +149,7 @@ export function ContactForm() {
             <Card className="border-2 border-border hover:border-primary/50 hover:shadow-xl transition-all duration-300 group bg-card">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <MapPin className="text-primary" size={24} />
                   </div>
                   <div>

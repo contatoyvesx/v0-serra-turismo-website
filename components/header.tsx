@@ -36,7 +36,7 @@ export function Header() {
                 className="object-contain p-2"
               />
             </div>
-            <span className="font-serif text-2xl md:text-3xl font-bold text-gradient-purple-gold">Serra Turismo</span>
+            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">Serra Turismo</span>
           </div>
 
           {/* Desktop Menu */}
@@ -87,7 +87,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-gradient-to-br from-primary/10 via-secondary/25 to-primary/10 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
+          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-primary/10 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
             <a
               href="#destinos"
               className="text-foreground hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-primary/10 font-medium"
