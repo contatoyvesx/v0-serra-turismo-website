@@ -168,6 +168,9 @@
 }
 
 .text-gradient-purple-gold {
-  color: #5e1882;
-  text-shadow: 0 6px 24px rgba(243, 217, 166, 0.35);
+  background: linear-gradient(110deg, #5e1882 0%, #7a2aa8 45%, #f3d9a6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 8px 24px rgba(94, 24, 130, 0.25), 0 8px 30px rgba(243, 217, 166, 0.25);
 }

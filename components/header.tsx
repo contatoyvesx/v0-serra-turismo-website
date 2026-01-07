@@ -19,8 +19,8 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-secondary/90 backdrop-blur-lg border-b border-border/70 ${
-        isScrolled ? "shadow-lg shadow-primary/5" : "shadow-sm"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gradient-to-r from-primary/15 via-secondary/35 to-primary/15 backdrop-blur-xl border-b border-border/70 ${
+        isScrolled ? "shadow-lg shadow-primary/10" : "shadow-sm"
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
@@ -65,12 +65,12 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
               Reserve Agora
             </Button>
             <Button
               asChild
-              className="bg-accent hover:bg-accent/90 text-primary-foreground font-semibold rounded-full px-5 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
+              className="bg-accent hover:bg-accent/90 text-primary font-semibold rounded-full px-5 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
             >
               <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
                 <PhoneCall size={18} />
@@ -87,7 +87,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-secondary/90 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
+          <div className="md:hidden mt-6 pb-4 flex flex-col gap-4 bg-gradient-to-br from-primary/10 via-secondary/25 to-primary/10 backdrop-blur-xl rounded-2xl p-6 border border-border/60 shadow-xl">
             <a
               href="#destinos"
               className="text-foreground hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-primary/10 font-medium"
@@ -116,12 +116,12 @@ export function Header() {
             >
               Contato
             </a>
-            <Button className="bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground w-full font-semibold rounded-full shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full font-semibold rounded-full shadow-[0_10px_35px_rgba(93,24,130,0.25)]">
               Reserve Agora
             </Button>
             <Button
               asChild
-              className="bg-accent hover:bg-accent/90 text-primary-foreground w-full font-semibold rounded-full flex items-center gap-2 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
+              className="bg-accent hover:bg-accent/90 text-primary w-full font-semibold rounded-full flex items-center gap-2 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
             >
               <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2">
                 <PhoneCall size={18} />

@@ -38,7 +38,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button
             size="lg"
-            className="group bg-[#5e1882] hover:bg-[#4c1369] text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            className="group bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(93,24,130,0.25)]"
           >
             Explorar Destinos
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -46,7 +46,7 @@ export function Hero() {
           <Button
             size="lg"
             asChild
-            className="bg-accent hover:bg-accent/90 text-primary-foreground text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
+            className="bg-accent hover:bg-accent/90 text-primary text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
           >
             <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
               <PhoneCall size={20} /> WhatsApp
