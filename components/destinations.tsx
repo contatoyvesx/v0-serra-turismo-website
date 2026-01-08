@@ -23,7 +23,7 @@ const destinations = [
   },
 ]
 
-const whatsappNumber = "555189628983"
+const whatsappNumber = "5551981699277"
 
 const getWhatsappLink = (destination: string) => {
   const message = `Olá! Tenho interesse em pacotes para ${destination}. Poderia me enviar mais detalhes?`

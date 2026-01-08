@@ -47,7 +47,7 @@ export function Hero() {
             asChild
             className="bg-accent hover:bg-accent/90 text-primary text-lg px-10 py-7 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
           >
-            <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+            <a href="https://wa.me/5551981699277" target="_blank" rel="noreferrer" className="flex items-center gap-2">
               <PhoneCall size={20} /> WhatsApp
             </a>
           </Button>
