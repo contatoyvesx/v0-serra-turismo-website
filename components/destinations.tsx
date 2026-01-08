@@ -12,13 +12,13 @@ const destinations = [
   {
     name: "Canela",
     description: "Cenários encantadores, parques naturais e o charme da Serra Gaúcha",
-    image: "/canela-rs-nature-parks-and-charming-town.jpg",
+    image: "/canela.jpg",
     rating: 4.7,
   },
   {
     name: "Bento Gonçalves",
     description: "Capital do vinho com roteiros enoturísticos e paisagens de vinhedos",
-    image: "/bento-goncalves-vineyards-wine-tourism.jpg",
+    image: "/bento.jpg",
     rating: 4.8,
   },
 ]
