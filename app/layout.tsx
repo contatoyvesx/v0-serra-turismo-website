@@ -8,7 +8,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] })
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "HA Serra Turismo - Experiências Premium em Destinos de Montanha",
+  title: "HA Serra Turismo",
   description:
     "Descubra as melhores experiências em destinos serranos com a HA Serra Turismo. Pacotes exclusivos e atendimento personalizado.",
   generator: "v0.app",

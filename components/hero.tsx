@@ -10,8 +10,6 @@ export function Hero() {
           alt="Mountain landscape"
           className="w-full h-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-primary/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-secondary/25 to-transparent" />
       </div>
 
       <div className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
