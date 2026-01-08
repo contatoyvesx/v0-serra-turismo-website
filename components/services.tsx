@@ -55,6 +55,34 @@ export function Services() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
+          <div className="relative mb-10 overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-br from-primary/5 via-background to-accent/10 px-6 py-8 text-left shadow-xl shadow-primary/10">
+            <div className="absolute -right-12 -top-16 h-40 w-40 rounded-full bg-accent/20 blur-3xl" />
+            <div className="absolute -left-16 bottom-0 h-32 w-32 rounded-full bg-primary/15 blur-3xl" />
+            <div className="relative grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+              <div className="space-y-4">
+                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-accent/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                  Transfer Aeroporto
+                </span>
+                <p className="text-2xl md:text-3xl font-serif font-semibold text-foreground">
+                  A ida no aeroporto é feita de carro.
+                </p>
+                <p className="text-muted-foreground max-w-xl">
+                  Conforto e praticidade para chegar ao seu destino com tranquilidade.
+                </p>
+              </div>
+              <div className="relative">
+                <div className="absolute -inset-2 rounded-3xl border border-accent/20 bg-white/60 blur-lg" />
+                <div className="relative overflow-hidden rounded-3xl">
+                  <img
+                    src="/carro.jpg"
+                    alt="Carro para transfer aeroporto"
+                    className="h-52 w-full object-cover shadow-lg"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
             <Sparkles size={16} />
             <span className="text-sm font-semibold uppercase tracking-wide">Serviços</span>
