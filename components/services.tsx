@@ -55,6 +55,25 @@ export function Services() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 mb-10 rounded-3xl border border-accent/20 bg-card/80 px-6 py-8 text-left shadow-lg shadow-primary/5">
+            <div className="space-y-3">
+              <p className="text-sm font-semibold uppercase tracking-wide text-accent">Transfer Aeroporto</p>
+              <p className="text-2xl md:text-3xl font-serif font-semibold text-foreground">
+                A ida no aeroporto é feita de carro.
+              </p>
+              <p className="text-muted-foreground max-w-xl">
+                Conforto e praticidade para chegar ao seu destino com tranquilidade.
+              </p>
+            </div>
+            <div className="w-full md:w-72 lg:w-80">
+              <img
+                src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=800&q=80"
+                alt="Carro de luxo em estrada"
+                className="h-48 w-full rounded-2xl object-cover shadow-md"
+                loading="lazy"
+              />
+            </div>
+          </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-6">
             <Sparkles size={16} />
             <span className="text-sm font-semibold uppercase tracking-wide">Serviços</span>

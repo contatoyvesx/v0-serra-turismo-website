@@ -24,9 +24,9 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance leading-tight">
-          <span className="text-secondary drop-shadow-2xl">Descubra o</span>
+          <span className="text-accent drop-shadow-2xl">Descubra o</span>
           <br />
-          <span className="text-primary drop-shadow-2xl">Extraordinário</span>
+          <span className="text-accent drop-shadow-2xl">Extraordinário</span>
         </h1>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
