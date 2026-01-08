@@ -29,14 +29,14 @@ export function Header() {
             <div className="relative w-14 h-14 rounded-full overflow-hidden bg-white/10 shadow-lg shadow-primary/30 ring-2 ring-accent/70 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
               <Image
                 src="/logo.png"
-                alt="A Serra Turismo"
+                alt="HA Serra Turismo"
                 fill
                 sizes="56px"
                 priority
                 className="object-contain p-2"
               />
             </div>
-            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">A Serra Turismo</span>
+            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">HA Serra Turismo</span>
           </div>
 
           {/* Desktop Menu */}
@@ -75,7 +75,7 @@ export function Header() {
               asChild
               className="bg-accent hover:bg-accent/90 text-primary font-semibold rounded-full px-5 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
             >
-              <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+              <a href="https://wa.me/5551981699277" target="_blank" rel="noreferrer" className="flex items-center gap-2">
                 <PhoneCall size={18} />
                 WhatsApp
               </a>
@@ -131,7 +131,7 @@ export function Header() {
               asChild
               className="bg-accent hover:bg-accent/90 text-primary w-full font-semibold rounded-full flex items-center gap-2 shadow-[0_12px_30px_rgba(243,217,166,0.25)]"
             >
-              <a href="https://wa.me/555189628983" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2">
+              <a href="https://wa.me/5551981699277" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2">
                 <PhoneCall size={18} />
                 WhatsApp
               </a>

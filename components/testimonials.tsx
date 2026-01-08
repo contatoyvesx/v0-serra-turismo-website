@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Maria Silva",
     location: "São Paulo, SP",
-    text: "A Serra Turismo transformou nossas férias em uma experiência mágica. Cada detalhe foi perfeito, desde a hospedagem até os passeios. Recomendo de olhos fechados!",
+    text: "HA Serra Turismo transformou nossas férias em uma experiência mágica. Cada detalhe foi perfeito, desde a hospedagem até os passeios. Recomendo de olhos fechados!",
     rating: 5,
     avatar: "/placeholder.svg?height=80&width=80",
   },
@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Ana Rodrigues",
     location: "Belo Horizonte, MG",
-    text: "Que experiência incrível! A equipe d'A Serra Turismo nos proporcionou momentos únicos em Gramado. Tudo organizado com perfeição.",
+    text: "Que experiência incrível! A equipe da HA Serra Turismo nos proporcionou momentos únicos em Gramado. Tudo organizado com perfeição.",
     rating: 5,
     avatar: "/placeholder.svg?height=80&width=80",
   },

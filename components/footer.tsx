@@ -13,7 +13,7 @@ export function Footer() {
               <div className="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                 <Sparkles className="text-accent-foreground" size={24} />
               </div>
-              <span className="font-serif text-2xl font-bold text-accent">A Serra Turismo</span>
+              <span className="font-serif text-2xl font-bold text-accent">HA Serra Turismo</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6">
               Transformando viagens em experiências memoráveis desde 2010. Sua jornada perfeita começa aqui.
@@ -21,11 +21,11 @@ export function Footer() {
             <div className="space-y-2 text-sm text-primary-foreground/70">
               <div className="flex items-center gap-2">
                 <Phone size={14} className="text-accent" />
-                <span>(11) 9999-9999</span>
+                <span>+55 51 98169-9277</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="text-accent" />
-                <span>contato@serraturismo.com.br</span>
+                <span>haserraturismo2@gmail.com</span>
               </div>
             </div>
           </div>
@@ -91,6 +91,14 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-6 text-accent">Conecte-se</h3>
             <p className="text-primary-foreground/80 text-sm mb-6">
               Siga-nos nas redes sociais para dicas de viagem e ofertas exclusivas
+              <a
+                href="https://www.instagram.com/ha.turismo?igsh=NDNnYW5zYnRhMGw0"
+                target="_blank"
+                rel="noreferrer"
+                className="text-accent block mt-2 hover:text-accent/80 transition-colors"
+              >
+                @ha.turismo
+              </a>
             </p>
             <div className="flex gap-3">
               <a
@@ -100,7 +108,9 @@ export function Footer() {
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/ha.turismo?igsh=NDNnYW5zYnRhMGw0"
+                target="_blank"
+                rel="noreferrer"
                 className="w-11 h-11 rounded-xl bg-secondary/25 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/50 backdrop-blur-sm"
               >
                 <Instagram size={20} />
@@ -123,7 +133,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>&copy; 2026 A Serra Turismo. Todos os direitos reservados.</p>
+            <p>&copy; 2026 HA Serra Turismo. Todos os direitos reservados.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-accent transition-colors">
                 Termos de Uso

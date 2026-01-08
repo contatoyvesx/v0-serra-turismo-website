@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, Instagram, Send } from "lucide-react"
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -77,7 +77,7 @@ export function ContactForm() {
                       <label className="text-sm font-semibold text-foreground mb-2 block">Telefone</label>
                       <Input
                         type="tel"
-                        placeholder="(11) 99999-9999"
+                        placeholder="(51) 98169-9277"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="bg-background border-2 focus:border-primary h-12 text-base"
@@ -117,10 +117,7 @@ export function ContactForm() {
                   <div>
                     <h3 className="font-bold text-foreground mb-3 text-lg">Telefone</h3>
                     <p className="text-muted-foreground mb-1 hover:text-primary transition-colors cursor-pointer">
-                      (11) 9999-9999
-                    </p>
-                    <p className="text-muted-foreground hover:text-primary transition-colors cursor-pointer">
-                      (11) 3333-3333
+                      +55 51 98169-9277
                     </p>
                   </div>
                 </div>
@@ -136,10 +133,7 @@ export function ContactForm() {
                   <div>
                     <h3 className="font-bold text-foreground mb-3 text-lg">E-mail</h3>
                     <p className="text-muted-foreground mb-1 hover:text-accent transition-colors cursor-pointer break-all">
-                      contato@serraturismo.com.br
-                    </p>
-                    <p className="text-muted-foreground hover:text-accent transition-colors cursor-pointer break-all">
-                      reservas@serraturismo.com.br
+                      haserraturismo2@gmail.com
                     </p>
                   </div>
                 </div>
@@ -150,15 +144,18 @@ export function ContactForm() {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-primary/15 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <MapPin className="text-primary" size={24} />
+                    <Instagram className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-3 text-lg">Endereço</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Av. das Montanhas, 1000
-                      <br />
-                      São Paulo, SP - Brasil
-                    </p>
+                    <h3 className="font-bold text-foreground mb-3 text-lg">Instagram</h3>
+                    <a
+                      href="https://www.instagram.com/ha.turismo?igsh=NDNnYW5zYnRhMGw0"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors break-all"
+                    >
+                      @ha.turismo
+                    </a>
                   </div>
                 </div>
               </CardContent>
