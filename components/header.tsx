@@ -29,14 +29,14 @@ export function Header() {
             <div className="relative w-14 h-14 rounded-full overflow-hidden bg-white/10 shadow-lg shadow-primary/30 ring-2 ring-accent/70 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
               <Image
                 src="/logo.png"
-                alt="Serra Turismo"
+                alt="A Serra Turismo"
                 fill
                 sizes="56px"
                 priority
                 className="object-contain p-2"
               />
             </div>
-            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">Serra Turismo</span>
+            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">A Serra Turismo</span>
           </div>
 
           {/* Desktop Menu */}

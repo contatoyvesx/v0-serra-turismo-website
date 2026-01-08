@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Ana Rodrigues",
     location: "Belo Horizonte, MG",
-    text: "Que experiência incrível! A equipe da Serra Turismo nos proporcionou momentos únicos em Campos do Jordão. Tudo organizado com perfeição.",
+    text: "Que experiência incrível! A equipe d'A Serra Turismo nos proporcionou momentos únicos em Gramado. Tudo organizado com perfeição.",
     rating: 5,
     avatar: "/placeholder.svg?height=80&width=80",
   },

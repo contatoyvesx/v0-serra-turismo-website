@@ -13,7 +13,7 @@ export function Footer() {
               <div className="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                 <Sparkles className="text-accent-foreground" size={24} />
               </div>
-              <span className="font-serif text-2xl font-bold text-accent">Serra Turismo</span>
+              <span className="font-serif text-2xl font-bold text-accent">A Serra Turismo</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6">
               Transformando viagens em experiências memoráveis desde 2010. Sua jornada perfeita começa aqui.
@@ -35,22 +35,17 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li>
                 <a href="#" className="hover:text-accent transition-colors hover:translate-x-1 inline-block">
-                  Campos do Jordão
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-accent transition-colors hover:translate-x-1 inline-block">
                   Gramado
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-accent transition-colors hover:translate-x-1 inline-block">
-                  Monte Verde
+                  Canela
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-accent transition-colors hover:translate-x-1 inline-block">
-                  Visconde de Mauá
+                  Bento Gonçalves
                 </a>
               </li>
               <li>
@@ -128,7 +123,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>&copy; 2026 Serra Turismo. Todos os direitos reservados.</p>
+            <p>&copy; 2026 A Serra Turismo. Todos os direitos reservados.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-accent transition-colors">
                 Termos de Uso
