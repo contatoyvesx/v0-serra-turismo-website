@@ -51,11 +51,10 @@ export function Hero() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto bg-secondary/80 backdrop-blur-md rounded-2xl p-8 shadow-lg shadow-primary/5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto bg-secondary/80 backdrop-blur-md rounded-2xl p-8 shadow-lg shadow-primary/5">
           {[
             { value: "15+", label: "Anos de Experiência" },
-            { value: "50K+", label: "Viajantes Felizes" },
-            { value: "200+", label: "Destinos Exclusivos" },
+            { value: "950+", label: "Viajantes Felizes" },
           ].map((stat, i) => (
             <div key={i} className="text-primary">
               <div className="text-4xl md:text-5xl font-bold mb-2 text-primary drop-shadow-lg">
