@@ -53,6 +53,40 @@ export function Destinations() {
           </p>
         </div>
 
+        <div className="mx-auto mb-16 max-w-4xl">
+          <div className="relative overflow-hidden rounded-3xl border border-primary/10 bg-gradient-to-br from-primary/5 via-background to-accent/5 p-8 md:p-10 shadow-xl shadow-primary/5">
+            <div className="absolute -top-16 -right-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
+            <div className="absolute -bottom-20 -left-10 h-44 w-44 rounded-full bg-accent/10 blur-3xl" />
+
+            <div className="relative grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-start">
+              <div className="space-y-4 text-left">
+                <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-primary">
+                  Descubra a magia de Gramado
+                </span>
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  A HA Serra Turismo oferece transporte compartilhado e privativo para tornar sua viagem
+                  inesquecível. Desfrute de passeios pelas ruas encantadoras, explore a culinária local,
+                  aproveite shows e eventos especiais e descubra tudo o que Gramado e Canela têm a oferecer.
+                </p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Nossa equipe está à disposição para tornar sua experiência ainda mais especial.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-primary/10 bg-background/80 p-6 shadow-md shadow-primary/5">
+                <div className="flex items-center gap-3 text-primary">
+                  <Star size={18} className="fill-primary/20 text-primary" />
+                  <span className="text-sm font-semibold uppercase tracking-wide">Curiosidade</span>
+                </div>
+                <p className="mt-3 text-base md:text-lg text-muted-foreground leading-relaxed">
+                  O nome &quot;Gramado&quot; vem dos tropeiros que passavam pela região e encontravam um
+                  campo com grama verde e macia para descansar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {destinations.map((destination, index) => (
             <Card

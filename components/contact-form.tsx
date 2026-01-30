@@ -133,7 +133,7 @@ export function ContactForm() {
                   <div>
                     <h3 className="font-bold text-foreground mb-3 text-lg">E-mail</h3>
                     <p className="text-muted-foreground mb-1 hover:text-accent transition-colors cursor-pointer break-all">
-                      haserraturismo2@gmail.com
+                      haturismo2@gmail.com
                     </p>
                   </div>
                 </div>
