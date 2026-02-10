@@ -9,17 +9,40 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, Instagram, Send } from "lucide-react"
 
+const WHATSAPP_PHONE = "5551981699277"
+
 export function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
-    phone: "",
     message: "",
   })
 
+  const [isSending, setIsSending] = useState(false)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+
+    const trimmedName = formData.name.trim()
+    const trimmedMessage = formData.message.trim()
+
+    if (!trimmedName || !trimmedMessage) {
+      return
+    }
+
+    setIsSending(true)
+
+    const whatsappSummary = [
+      "Olá, HA Turismo! ✨",
+      "",
+      "Recebi um pedido de contato pelo site:",
+      `Nome: ${trimmedName}`,
+      `Mensagem: ${trimmedMessage}`,
+    ].join("\n")
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(whatsappSummary)}`
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer")
+    setIsSending(false)
   }
 
   return (
@@ -38,7 +61,7 @@ export function ContactForm() {
             Planeje Sua Próxima <span className="text-primary">Aventura</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-            Entre em contato conosco e descubra como podemos criar a viagem perfeita para você
+            Envie um resumo rápido e continue a conversa diretamente no WhatsApp
           </p>
         </div>
 
@@ -46,47 +69,25 @@ export function ContactForm() {
           <div className="lg:col-span-2">
             <Card className="border-2 border-border hover:border-primary/30 transition-all duration-300 shadow-xl bg-card">
               <CardHeader className="pb-6">
-                <CardTitle className="text-3xl font-serif font-bold text-primary">
-                  Envie sua Mensagem
-                </CardTitle>
-                <p className="text-muted-foreground mt-2">Responderemos em até 24 horas</p>
+                <CardTitle className="text-3xl font-serif font-bold text-primary">Solicitar no WhatsApp</CardTitle>
+                <p className="text-muted-foreground mt-2">Preencha os campos e envie em um clique</p>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label className="text-sm font-semibold text-foreground mb-2 block">Nome Completo</label>
+                    <label className="text-sm font-semibold text-foreground mb-2 block">Nome</label>
                     <Input
+                      required
                       placeholder="Digite seu nome"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="bg-background border-2 focus:border-primary h-12 text-base"
                     />
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-semibold text-foreground mb-2 block">E-mail</label>
-                      <Input
-                        type="email"
-                        placeholder="seu@email.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="bg-background border-2 focus:border-primary h-12 text-base"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-semibold text-foreground mb-2 block">Telefone</label>
-                      <Input
-                        type="tel"
-                        placeholder="(51) 98169-9277"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="bg-background border-2 focus:border-primary h-12 text-base"
-                      />
-                    </div>
-                  </div>
                   <div>
                     <label className="text-sm font-semibold text-foreground mb-2 block">Mensagem</label>
                     <Textarea
+                      required
                       placeholder="Conte-nos sobre a viagem dos seus sonhos..."
                       rows={6}
                       value={formData.message}
@@ -97,10 +98,11 @@ export function ContactForm() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg py-6 group shadow-[0_12px_30px_rgba(93,24,130,0.25)] ring-1 ring-accent/60"
+                    disabled={isSending}
+                    className="w-full py-6 text-lg font-bold text-primary-foreground rounded-xl bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] hover:bg-[position:100%_0] transition-all duration-500 shadow-[0_16px_35px_rgba(93,24,130,0.35)] ring-1 ring-accent/60"
                   >
-                    Enviar Mensagem
-                    <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                    {isSending ? "Abrindo WhatsApp..." : "Enviar resumo para WhatsApp"}
+                    <Send className="ml-2" size={20} />
                   </Button>
                 </form>
               </CardContent>
