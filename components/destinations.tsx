@@ -99,25 +99,22 @@ export function Destinations() {
                   alt={destination.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-primary/60" />
-
                 <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-2 rounded-full bg-secondary/90 backdrop-blur-sm shadow-lg">
                   <Star size={16} className="fill-accent text-accent" />
                   <span className="font-bold text-sm">{destination.rating}</span>
                 </div>
-
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-secondary/95">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="flex items-center gap-2">
-                      <MapPin size={24} className="text-accent flex-shrink-0" />
-                      <h3 className="font-serif text-3xl font-bold">{destination.name}</h3>
-                    </div>
-                  </div>
-                  <p className="text-secondary/85 text-base leading-relaxed mb-3">{destination.description}</p>
-                </div>
               </div>
 
               <CardContent className="p-6 bg-gradient-to-br from-card to-muted/25">
+                <div className="mb-5">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      <MapPin size={24} className="text-accent flex-shrink-0" />
+                      <h3 className="font-serif text-3xl font-bold text-foreground">{destination.name}</h3>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-base leading-relaxed">{destination.description}</p>
+                </div>
                 <Button
                   asChild
                   className="w-full bg-primary/90 hover:bg-primary text-primary-foreground font-semibold group/btn shadow-md shadow-primary/10"
