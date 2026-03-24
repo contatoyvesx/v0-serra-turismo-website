@@ -4,21 +4,52 @@ import { Button } from "@/components/ui/button"
 
 const destinations = [
   {
-    name: "Gramado",
-    description: "Destino romântico com arquitetura encantadora e gastronomia excepcional",
+    name: "City Tour Gramado e Canela",
+    description:
+      "Ao planejar sua visita à Serra Gaúcha, não deixe de incluir o City Tour em Gramado e Canela no seu roteiro. É a forma ideal de conhecer os principais pontos turísticos das duas cidades e aproveitar melhor cada momento da viagem.",
     image: "/gramado-charming-town-with-flowers-and-architectur.jpg",
     rating: 4.8,
   },
   {
-    name: "Canela",
-    description: "Cenários encantadores, parques naturais e o charme da Serra Gaúcha",
+    name: "Tour Uva e Vinho Completo + Trem + Almoço + 2 Vinícolas + Epopeia",
+    description:
+      "Prepare-se para uma experiência inesquecível a bordo do tradicional Trem Maria Fumaça. Este passeio foi pensado para que você aproveite ao máximo a beleza do Vale dos Vinhedos, conhecendo a história, a cultura e os sabores marcantes da região.",
+    image: "/bento.jpg",
+    rating: 4.9,
+  },
+  {
+    name: "Tour Vinícola Jolimont + Sabores",
+    description:
+      "Viva uma experiência especial em Gramado e Canela com o Tour Vinícola Jolimont + Sabores. O passeio inclui visita à tradicional Vitivinícola Jolimont, uma das pioneiras na produção de vinhos finos e artesanais no estado.",
     image: "/canela.jpg",
+    rating: 4.8,
+  },
+  {
+    name: "Tour Linha Bela + Almoço Italiano + Recolhimento",
+    description:
+      "Neste passeio, você terá a chance de conhecer de perto o dia a dia das famílias de colonos, ouvir suas histórias, apreciar belas paisagens naturais, respirar o ar puro do campo e saborear deliciosos produtos coloniais.",
+    image: "/beautiful-mountain-landscape-with-sunset--serene-p.jpg",
     rating: 4.7,
   },
   {
-    name: "Bento Gonçalves",
-    description: "Capital do vinho com roteiros enoturísticos e paisagens de vinhedos",
-    image: "/bento.jpg",
+    name: "Noite Gaúcha com Jantar, Show e Transporte",
+    description:
+      "Nossa equipe busca você no local de hospedagem e leva até o evento para uma noite completa de cultura gaúcha. Aproveite um jantar com pratos típicos preparados com ingredientes frescos e saborosos, além de um show especial para tornar a experiência ainda mais marcante.",
+    image: "/stunning-mountain-landscape-at-golden-hour-with-dr.jpg",
+    rating: 4.9,
+  },
+  {
+    name: "Noite Alemã com Jantar, Show e Transporte",
+    description:
+      "Desfrute de uma Noite Alemã completa com jantar, show e transporte. Uma experiência perfeita para quem deseja vivenciar de perto a tradição, a gastronomia e o clima típico da cultura alemã.",
+    image: "/campos-do-jord-o-beautiful-mountain-town.jpg",
+    rating: 4.7,
+  },
+  {
+    name: "Noite Italiana com Jantar, Show e Transporte",
+    description:
+      "Aproveite uma Noite Italiana completa com jantar, show e transporte. Ideal para quem busca uma experiência autêntica, com muita cultura, boa comida e um ambiente cheio de tradição italiana.",
+    image: "/campos-do-jordao-mountain-town-european-architectu.jpg",
     rating: 4.8,
   },
 ]
