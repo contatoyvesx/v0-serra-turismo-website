@@ -4,16 +4,10 @@ import { Button } from "@/components/ui/button"
 
 const destinations = [
   {
-    name: "Gramado",
-    description: "Destino romântico com arquitetura encantadora e gastronomia excepcional",
+    name: "City tour Gramado e Canela",
+    description: "Roteiro completo com o charme de Gramado e Canela, gastronomia, parques e paisagens da Serra Gaúcha",
     image: "/gramado-charming-town-with-flowers-and-architectur.jpg",
     rating: 4.8,
-  },
-  {
-    name: "Canela",
-    description: "Cenários encantadores, parques naturais e o charme da Serra Gaúcha",
-    image: "/canela.jpg",
-    rating: 4.7,
   },
   {
     name: "Bento Gonçalves",
